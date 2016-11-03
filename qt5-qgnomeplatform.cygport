@@ -3,7 +3,7 @@ inherit git qt5-qmake
 
 NAME="qt5-qgnomeplatform"
 VERSION=0.2
-RELEASE=0.1.git20160718
+RELEASE=0.2.git20161024
 CATEGORY="X11"
 SUMMARY="GNOME integration for Qt5/KF5 programs"
 DESCRIPTION="QGnomePlatform is a Qt Platform Theme aimed to accommodate as much
@@ -12,5 +12,6 @@ modifying them - making them fit into the environment as well as possible."
 HOMEPAGE="https://github.com/MartinBriza/QGnomePlatform/"
 #SRC_URI="${HOMEPAGE}/archive/${VERSION}/QGnomePlatform-${VERSION}.tar.gz"
 #SRC_DIR="QGnomePlatform-${VERSION}"
+PATCH_URI="0.2-no-undefined.patch"
 
 REQUIRES="adwaita-qt5 adwaita-icon-theme cantarell-fonts"

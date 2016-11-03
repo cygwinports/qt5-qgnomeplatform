@@ -1,0 +1,11 @@
+--- origsrc/QGnomePlatform/qgnomeplatform.pro	2016-10-30 11:37:43.000000000 -0500
++++ src/QGnomePlatform/qgnomeplatform.pro	2016-11-03 11:34:24.322531500 -0500
+@@ -12,6 +12,8 @@ QT += core-private \
+ PKGCONFIG += gtk+-3.0 \
+              gtk+-x11-3.0
+ 
++unix:PKGCONFIG += x11
++
+ TARGET = qgnomeplatform
+ target.path += $$[QT_INSTALL_PLUGINS]/platformthemes
+ INSTALLS += target
