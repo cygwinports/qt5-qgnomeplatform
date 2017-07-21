@@ -1,17 +1,16 @@
-GIT_URI="https://github.com/MartinBriza/QGnomePlatform.git"
-inherit git qt5-qmake
+inherit qt5-qmake
 
 NAME="qt5-qgnomeplatform"
-VERSION=0.2
-RELEASE=0.2.git20161024
+VERSION=0.3
+RELEASE=1
 CATEGORY="X11"
 SUMMARY="GNOME integration for Qt5/KF5 programs"
 DESCRIPTION="QGnomePlatform is a Qt Platform Theme aimed to accommodate as much
 of GNOME settings as possible and utilize them in Qt applications without
 modifying them - making them fit into the environment as well as possible."
 HOMEPAGE="https://github.com/MartinBriza/QGnomePlatform/"
-#SRC_URI="${HOMEPAGE}/archive/${VERSION}/QGnomePlatform-${VERSION}.tar.gz"
-#SRC_DIR="QGnomePlatform-${VERSION}"
+SRC_URI="${HOMEPAGE}/archive/${VERSION}/QGnomePlatform-${VERSION}.tar.gz"
+SRC_DIR="QGnomePlatform-${VERSION}"
 PATCH_URI="0.2-no-undefined.patch"
 
 REQUIRES="adwaita-qt5 adwaita-icon-theme cantarell-fonts"
