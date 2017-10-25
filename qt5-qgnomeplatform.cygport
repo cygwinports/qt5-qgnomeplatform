@@ -2,7 +2,7 @@ inherit qt5-qmake
 
 NAME="qt5-qgnomeplatform"
 VERSION=0.3
-RELEASE=1
+RELEASE=2
 CATEGORY="X11"
 SUMMARY="GNOME integration for Qt5/KF5 programs"
 DESCRIPTION="QGnomePlatform is a Qt Platform Theme aimed to accommodate as much
